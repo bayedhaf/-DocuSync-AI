@@ -47,7 +47,7 @@ npm install
 3. Set your environment variables:
 Create a `.env.local` file and add:
 ```text
-AI_API_KEY=your_key_here
+GEMINI_API_KEY=your api keys
 
 ```
 
@@ -74,13 +74,19 @@ Contributions are welcome! Please feel free to open a Pull Request or create an 
 ---
 
 ## Screenshots ui for both mobile and desktop
+
 ### Before messages on desktop
+
 <img width="923" height="604" alt="Screenshot From 2026-02-27 23-00-07" src="https://github.com/user-attachments/assets/65160807-cc39-4940-8baf-d9634be33fef" />
-### After messages on desktop
+---
+### After messages on Desktop
+
 <img width="923" height="604" alt="Screenshot From 2026-02-27 23-02-05" src="https://github.com/user-attachments/assets/3250b58f-553b-4395-820a-778554d26903" />
+
+---
 ### After messages on Mobile device
+
 <img width="299" height="506" alt="Screenshot From 2026-02-27 23-03-36" src="https://github.com/user-attachments/assets/c959de08-63cd-40f3-b3ee-4ecf7edd4b11" />
 
-* **License:** Don't forget to add a `LICENSE` file (like MIT) so others know they are allowed to use your code.
-
+* **License:** MIT
 **Next Step:** Would you like me to help you write a structured `CONTRIBUTING.md` file so other developers know how to best submit PRs to your project?
