@@ -1,9 +1,12 @@
 import { NextResponse } from "next/server";
 import { RecursiveCharacterTextSplitter } from "@langchain/textsplitters";
-import { PDFParse } from "pdf-parse";
+
+export const runtime = "nodejs";
 
 export async function POST(req: Request) {
   try {
+    const { PDFParse } = await import("pdf-parse");
+
     const formData = await req.formData();
     const file = formData.get("file");
 
@@ -43,4 +46,8 @@ export async function POST(req: Request) {
     console.error(error);
     return NextResponse.json({ error: "Processing failed" }, { status: 500 });
   }
+}
+
+export async function GET() {
+  return NextResponse.json({ error: "Method Not Allowed" }, { status: 405 });
 }
