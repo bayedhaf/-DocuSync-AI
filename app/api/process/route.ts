@@ -1,6 +1,6 @@
 import { NextResponse } from "next/server";
 import { RecursiveCharacterTextSplitter } from "@langchain/textsplitters";
-import pdfParse from "pdf-parse/lib/pdf-parse.js";
+import { PDFParse } from "pdf-parse";
 
 export async function POST(req: Request) {
   try {
@@ -12,7 +12,9 @@ export async function POST(req: Request) {
     }
 
     const fileBuffer = Buffer.from(await file.arrayBuffer());
-    const parsedPdf = await pdfParse(fileBuffer);
+    const parser = new PDFParse({ data: fileBuffer });
+    const parsedPdf = await parser.getText();
+    await parser.destroy();
     const extractedText = parsedPdf.text?.trim() ?? "";
 
     if (!extractedText) {
