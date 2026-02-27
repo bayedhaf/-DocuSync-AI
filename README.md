@@ -1,37 +1,86 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-## Getting Started
+# 🚀 DocuSync-AI
 
-First, run the development server:
+**Your Intelligent Document Assistant.** DocuSync-AI is an autonomous agent designed to vectorize,and answer complex questions from your private documents in real-time. Stop searching through PDFs; start chatting with them.
 
+---
+
+## ✨ Features
+
+* **Intelligent RAG:** Advanced context retrieval ensures answers are grounded in your specific documents.
+* **Modern UI:** A clean, mobile-responsive dark-mode interface built with Next.js and Tailwind CSS.
+* **Streaming Responses:** AI responses feel natural with real-time text streaming.
+* **Vector Ready:** Easily plug in your preferred vector database for long-term document memory.
+
+## 🛠 Tech Stack
+
+* **Framework:** [Next.js](https://nextjs.org/) (App Router)
+* **Styling:** [Tailwind CSS](https://tailwindcss.com/)
+* **Icons:** [Lucide React](https://lucide.dev/)
+* **AI Logic:** Gemini API (or your preferred LLM)
+* **Processing:** PDF.js / LangChain
+
+## 📦 Getting Started
+
+### Prerequisites
+
+* Node.js 18.x or higher.
+* An API Key from your chosen AI provider (e.g., Google AI Studio).
+
+### Installation
+
+1. Clone the repo:
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone https://github.com/your-username/docusync-ai.git
+cd docusync-ai
+
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+2. Install dependencies:
+```bash
+npm install
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```
 
-## Learn More
 
-To learn more about Next.js, take a look at the following resources:
+3. Set your environment variables:
+Create a `.env.local` file and add:
+```text
+AI_API_KEY=your_key_here
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
 
-## Deploy on Vercel
+4. Run the development server:
+```bash
+npm run dev
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
-# -DocuSync-AI
+
+
+## 🧠 How it Works
+
+1. **Upload:** You upload a PDF or text file via the sidebar.
+2. **Chunking:** The agent splits the document into semantic chunks and vectorizes them.
+3. **Retrieval:** When you ask a question, the agent performs a similarity search to find the most relevant document passages.
+4. **Generation:** The AI synthesizes an answer based strictly on the retrieved context.
+
+## 🤝 Contribution
+
+Contributions are welcome! Please feel free to open a Pull Request or create an Issue if you find a bug or have a feature request.
+
+---
+
+## Screenshots ui for both mobile and desktop
+### Before messages on desktop
+<img width="923" height="604" alt="Screenshot From 2026-02-27 23-00-07" src="https://github.com/user-attachments/assets/65160807-cc39-4940-8baf-d9634be33fef" />
+### After messages on desktop
+<img width="923" height="604" alt="Screenshot From 2026-02-27 23-02-05" src="https://github.com/user-attachments/assets/3250b58f-553b-4395-820a-778554d26903" />
+### After messages on Mobile device
+<img width="299" height="506" alt="Screenshot From 2026-02-27 23-03-36" src="https://github.com/user-attachments/assets/c959de08-63cd-40f3-b3ee-4ecf7edd4b11" />
+
+* **License:** Don't forget to add a `LICENSE` file (like MIT) so others know they are allowed to use your code.
+
+**Next Step:** Would you like me to help you write a structured `CONTRIBUTING.md` file so other developers know how to best submit PRs to your project?
