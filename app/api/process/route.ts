@@ -5,7 +5,7 @@ export const runtime = "nodejs";
 
 export async function POST(req: Request) {
   try {
-    const { PDFParse } = await import("pdf-parse");
+    const { default: pdfParse } = await import("pdf-parse/lib/pdf-parse.js");
 
     const formData = await req.formData();
     const file = formData.get("file");
@@ -15,9 +15,7 @@ export async function POST(req: Request) {
     }
 
     const fileBuffer = Buffer.from(await file.arrayBuffer());
-    const parser = new PDFParse({ data: fileBuffer });
-    const parsedPdf = await parser.getText();
-    await parser.destroy();
+    const parsedPdf = await pdfParse(fileBuffer);
     const extractedText = parsedPdf.text?.trim() ?? "";
 
     if (!extractedText) {
