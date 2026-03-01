@@ -80,11 +80,13 @@ Contributions are welcome! Please feel free to open a Pull Request or create an 
 <img width="923" height="604" alt="Screenshot From 2026-02-27 23-00-07" src="https://github.com/user-attachments/assets/65160807-cc39-4940-8baf-d9634be33fef" />
 ---
 ### After messages on Desktop
+<img width="1055" height="579" alt="Screenshot From 2026-03-01 00-58-56" src="https://github.com/user-attachments/assets/81079868-3276-42ed-afb3-9653eb49611b" />
 
 <img width="923" height="604" alt="Screenshot From 2026-02-27 23-02-05" src="https://github.com/user-attachments/assets/3250b58f-553b-4395-820a-778554d26903" />
 
 ---
 ### After messages on Mobile device
+<img width="291" height="487" alt="Screenshot From 2026-03-01 01-00-19" src="https://github.com/user-attachments/assets/5079f049-d699-4f72-ab19-61bde7d0ff36" />
 
 <img width="299" height="506" alt="Screenshot From 2026-02-27 23-03-36" src="https://github.com/user-attachments/assets/c959de08-63cd-40f3-b3ee-4ecf7edd4b11" />
 
